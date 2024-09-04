@@ -1,0 +1,48 @@
+@import url("panel.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:root {
+  --cml-lr_grad: linear-gradient(to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0));
+  --cml-tb_grad: linear-gradient(to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0));
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.center_text {
+  text-align: center
+}
+
+hr.imini {
+  margin: 5px;
+  border: 0;
+  height: 1px;
+}
+
+hr.holomini {
+  margin: 5px;
+  border: 0;
+  height: 1px;
+  background-image: var(--cml-lr_grad);
+}
+
+fieldset.holo {
+  padding: 3% 0px 3% 3%;
+
+  & legend {
+    font-weight: bold;
+    line-height: 10px;
+  }
+}
